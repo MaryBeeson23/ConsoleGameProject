@@ -8,21 +8,15 @@ public class TJ : LivingCreature
     {
 
     }
-    public TJ(string Name, int Level, int HP)
+    public TJ(string Name, int Level, int HP) : base ()
     {
         this.Name = Name;
         this.Level = Level;
-        this.HP = HP;
         this.Weapon = Weapon;
-
-
-
     }
     public string Name {get; set; }
     
     public int Level {get; set; }
-
-    public int HP {get; set; }
 
     public Weapon Weapon {get; set; }
     public int WeaponDMG {get {

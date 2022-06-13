@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 namespace Game_Repository
 {
     public class LivingCreature
-    {
-        
+    {   
+        public int MaxHP { get; set; }
+        public int CurrentHP { get; set; }
     }
 }
