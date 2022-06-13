@@ -4,11 +4,11 @@
 
 public class TJ : LivingCreature
 {
-    public TJ()
+    public TJ() : base()
     {
 
     }
-    public TJ(string Name, int Level, int HP) : base ()
+    public TJ(string Name, int Level, int HP) : base ( maxHP, currentHP)
     {
         this.Name = Name;
         this.Level = Level;
