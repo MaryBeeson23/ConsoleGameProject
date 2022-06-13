@@ -11,10 +11,10 @@ public abstract class LivingCreature {
     {
         
     }
-public LivingCreature(int maxHP, int currentHP)
+public LivingCreature(int MaxHP, int CurrentHP)
 {
-    MaxHP = maxHP;
-    CurrentHP = currentHP;
+    this.MaxHP = MaxHP;
+    this.CurrentHP = CurrentHP;
 }
         public int MaxHP { get; set; }
         public int CurrentHP { get; set; }

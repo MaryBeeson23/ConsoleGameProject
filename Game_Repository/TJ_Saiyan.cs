@@ -8,17 +8,14 @@ public class TJ : LivingCreature
     {
 
     }
-    public TJ(string Name, int Level, int HP) : base ( maxHP, currentHP)
+    public TJ(string Name, Weapon Weapon) : base ( MaxHP, CurrentHP)
     {
         this.Name = Name;
-        this.Level = Level;
         this.Weapon = Weapon;
     }
     public string Name {get; set; }
     
-    public int Level {get; set; }
-
-    public Weapon Weapon {get; set; }
+    public WeaponType Weapon {get; set; }
     public int WeaponDMG {get {
         switch (Weapon)
         {
@@ -42,7 +39,7 @@ public class TJ : LivingCreature
 
 }
 
-public enum Weapon {
+public enum WeaponType {
     PowerPole,
     BraveSword,
     SickleOfSorrow,
