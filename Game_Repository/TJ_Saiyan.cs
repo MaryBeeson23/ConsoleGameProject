@@ -8,7 +8,7 @@ public class TJ : LivingCreature
     {
 
     }
-    public TJ(string Name, Weapon Weapon) : base ( MaxHP, CurrentHP)
+    public TJ(string Name, WeaponType Weapon) : base ( MaxHP, CurrentHP)
     {
         this.Name = Name;
         this.Weapon = Weapon;
@@ -19,16 +19,16 @@ public class TJ : LivingCreature
     public int WeaponDMG {get {
         switch (Weapon)
         {
-            case Weapon.PowerPole:
+            case WeaponType.PowerPole:
                 return 50;
                 break;
-            case Weapon.BraveSword:
+            case WeaponType.BraveSword:
                 return 75;
                 break;
-            case Weapon.SickleOfSorrow:
+            case WeaponType.SickleOfSorrow:
                 return 100;
                 break;
-            case Weapon.KameHameHa:
+            case WeaponType.KameHameHa:
                 return 1000;
                 break;
             default:

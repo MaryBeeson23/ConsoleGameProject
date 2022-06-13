@@ -14,5 +14,13 @@ namespace Game_Console
             Seed();
             RunMenu();
         }
+
+        public void RunMenu() {
+        }
+            private void Seed(){
+                TJ tJ = new TJ("Super Saiyan TJ", WeaponType.PowerPole);
+                Androids androids = new Androids("")
+                
+            }
     }
 }
