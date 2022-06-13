@@ -17,6 +17,8 @@ namespace Game_Repository
         public string Name { get; set; }
         public string Description { get; set; }
 
+        public bool HasHealingChamber { get; set; }
+
         public bool FoundWeapon { get; set; }
     }
 }
